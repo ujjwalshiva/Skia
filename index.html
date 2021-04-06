@@ -19,45 +19,33 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Yatra+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
 
     <title>Startup</title>
   </head>
   <body>
 
     <!--BootStrap NavBar-->
-    <nav class="navbar navbar-expand-md navbar-light bg-light" id="navbar">
+    <nav class="navbar navbar-expand-md navbar navbar-light">
       <div class="container">
         
         <!--Logo imported from Bootstrap Icons-->
-        <a class="navbar navbar-expand-md navbar-light bg-light" href="#">
-          <i class="bi bi-bootstrap-fill" style= "font-size: 2rem; color: rgb(177, 109, 236)"></i>
-        </a>
-
-        <!--Button Group for Menu-->
-        <div class="btn-group">
-          <div class="btn-group dropleft" role="group">
-          
-            <!--Menu Icon-->
-            <button type="button" class="btn btn-lg btn-light dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" aria-haspopup="true">
-            ☰
-            </button>
-
-            <!--Dropdown Menu Content-->
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#whyus">Why Us?</a></li>
-              <li><a class="dropdown-item" href="#pricing">Pricing</a></li>
-              <li><a class="dropdown-item" href="#gettoknowus">Get to know us.</a></li>
-              <li><hr class="dropdown-divider"></li>
-              <li><a class="dropdown-item" href="#contactus">Contact Us</a></li>
-            </ul>
-
-          </div>
-
-        </div>  
+        <a class="brand" href="#"><span>Skia</span></a>
+        <div class="menubox" onclick="rotate()">
+          <img class="menuicon" src="icons\16085562281586787939-128.png" alt="">
+        </div>
+      </div>
         
       </div>
     </nav>
-    
+    <div class="slide">
+      <a class="dropdownitem" href="#whyus">Why Us?</a>
+      <a class="dropdownitem" href="#pricing">Pricing</a>
+      <a class="dropdownitem" href="#gettoknowus">Get to know us.</a>
+      <a class="dropdownitem" href="#contactus">Contact Us</a>
+    </div>
     <!--Container for the First Section-->
     <div class="container" id='First'>
       <div class="row">
@@ -72,13 +60,15 @@
         <div class="col-xl-6 col-lg-6 col-sm-12 col-xs-12 template-image">
           <img src="Screenshot.png" class="imgfit" alt="" width="100%" height="350">
         </div>
-
+        <div class="container">
+          <img id="walking" src="icons\giphy.gif" alt="">
+        </div>
       </div>
     </div>
 
     <div class="container-fluid second-section why-us" id="whyus">
       <h2> Why Us? </h2>
-      <p>As passionate Web Developers, we feel that Technology must be Affordable, Accessible, and Adaptive for all, and these three A's build the core of our SKIA. We started SKIA with a motive to provide seamless and beautiful web pages for our clients, that are both responsive and incredibly fast for the end-user. By deploying the latest technologies like HTML-5, CSS-3, Bootstrap v5.0, and Javascript, we ensure a smooth experience when customers access the websites. Give us a chance, so that we provide you an opportunity to get blown away by our products!
+      <p>As passionate Web Developers, we feel that Technology must be Affordable, Accessible, and Adaptive for all, and these three A's build the core of SKIA. We started SKIA with a motive to provide seamless and beautiful web pages for our clients, that are both responsive and incredibly fast for the end-user. By deploying the latest technologies like HTML-5, CSS-3, Bootstrap v5.0, and Javascript, we ensure a smooth experience when customers access the websites. Give us a chance, so that we provide you an opportunity to get blown away by our products!
       </p>
     </div>
 
@@ -86,51 +76,30 @@
       <h2>Pricing</h2>
       <p>Now let's be honest here... A modern website development can cost you anywhere between ₹10000 to ₹20000, while the Domain and Web-Hosting charges are excluded. Now what if we told you, that we can get all this done in less than 1/10th of the above quoted price? Amazing, right! Choose from our bold range of partially-customisable templates, and we'll modify it to your suiting. Have a look at our popular plans below.</p>
       <div class="row">
-        <div class="col-xl-3 col-lg-3 col-sm-4 col-xs-12">
-          <div class="card card1" style="width: 18rem;">
-            <img class="card-img-top" src="Screenshot.png" alt="Card image cap">
-            <div class="card-body">
-              <h5 class="card-title">Simply Cool</h5>
-              <p class="card-text"></p>
-              <a href="#" class="btn btn-primary">View</a>
-              <a href="#" class="btn btn-secondary">Get Quote</a>
+        <div class="templates">
+          <div class="card-container" id="template1">
+            <div class="card">
+              <figure class="front"><span style="color: aliceblue; font-family: 'Pacifico', cursive; font-size: 150%; padding-top: 5%;">Simple and elegant personal website</span>
+              <a href="https://rishi1314.github.io/template1public/" class="viewwebsite"><button class="buttontemp">View Website</button></a>
+              <span class="price">₹500</span></figure>
+              <figure class="back">
+                <span class="designname">Simply Cool</span>
+              </figure>
             </div>
           </div>
         </div>
-        <div class="col-xl-3 col-lg-3 col-sm-4 col-xs-12">
-          <div class="card card1" style="width: 18rem;">
-            <img class="card-img-top" src="Screenshot.png" alt="Card image cap">
-            <div class="card-body">
-              <h5 class="card-title">Simply Cool 2</h5>
-              <p class="card-text"></p>
-              <a href="#" class="btn btn-primary">View</a>
-              <a href="#" class="btn btn-secondary">Get Quote</a>
+        <div class="templates">
+          <div class="card-container" id="template2">
+            <div class="card">
+              <figure class="front2"><span style="color: aliceblue; font-family: 'Pacifico', cursive; font-size: 150%; padding-top: 5%;">Dark Themed Template with Rich Animations</span>
+              <a href="https://competent-mahavira-e13f09.netlify.app/" class="viewwebsite"><button class="buttontemp">View Website</button></a>
+              <span class="price">₹750</span></figure>
+              <figure class="back2">
+                <span class="designname">Grand Galactic</span>
+              </figure>
             </div>
           </div>
         </div>
-        <div class="col-xl-3 col-lg-3 col-sm-4 col-xs-12">
-          <div class="card card1" style="width: 18rem;">
-            <img class="card-img-top" src="Screenshot.png" alt="Card image cap">
-            <div class="card-body">
-              <h5 class="card-title">Simply Cool 3</h5>
-              <p class="card-text"></p>
-              <a href="#" class="btn btn-primary">View</a>
-              <a href="#" class="btn btn-secondary">Get Quote</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-xl-3 col-lg-3 col-sm-4 col-xs-12">
-          <div class="card card1" style="width: 18rem;">
-            <img class="card-img-top" src="Screenshot.png" alt="Card image cap">
-            <div class="card-body">
-              <h5 class="card-title">Simply Cool 4</h5>
-              <p class="card-text"></p>
-              <a href="#" class="btn btn-primary">View</a>
-              <a href="#" class="btn btn-secondary">Get Quote</a>
-            </div>
-          </div>
-        </div>
-        
       </div>
     </div>
     <div class="container-fluid fourth-section" id='gettoknowus'>
@@ -138,16 +107,27 @@
       <div class="row">
         <div class="col-sm-6">
           <h5>Rishi Raj</h5>
-          <img src="rishi.png" class="rounded-circle" alt="Rishi" width="200" height="200">
+          <img loading=lazy src="rishi.png" class="rounded-circle" alt="Rishi" width="200" height="200">
         </div>
         <div class="col-sm-6">
           <h5>Ujjwal Acharya</h5>
-          <img src="Ujjwal.jpg" class="rounded-circle" alt="Ujjwal" width="200" height="200" style="filter: grayscale(100%);">
+          <img loading=lazy src="Ujjwal.jpg" class="rounded-circle" alt="Ujjwal" width="200" height="200" style="filter: grayscale(100%);">
         </div>
       </div>
       <p>
-        Hey There! We're glad you reached out to our website! We are passionate Web Developers who are currently pursuing B.Tech in Computer Science and Technology. We'd love to put in our best and create amazing websites for you and your company. Our passion-driven [Brand] aims to provide amazing websites, that look incredible while also costing less for your wallet. Take this as an Assurance - The value that we offer for what it costs is simply unbeatable... We're not corporates in suits but students, who would want to provide the same experience, but at a price far lower than any others. Feel free to write to us or share your experiences, we can't wait to get better!
+        Hey There! We're glad you reached out to our website! We are passionate Web Developers who are currently pursuing B.Tech in Computer Science and Technology. We'd love to put in our best and create amazing websites for you and your company. Our passion-driven Skia aims to provide amazing websites, that look incredible while also costing less for your wallet. Take this as an Assurance - The value that we offer for what it costs is simply unbeatable... We're not corporates in suits but students, who would want to provide the same experience, but at a price far lower than any others. Feel free to write to us or share your experiences, we can't wait to get better!
       </p>
+    </div>
+    <div class="contactus">
+      <form action="mailto:rishirajdj13@gmail.com" method="post" enctype="text/plain">
+        <input name="name" type="text" class="form-control" placeholder="Your Name" required><br>
+        <input name="email" type="email" class="form-control" placeholder="Your Email" required><br>
+        <textarea name="message" class="form-control" placeholder="Your Message with the template name" rows="6" required></textarea><br>
+        <div class="submitbutton"><input type="submit" name=""></div>
+      </form>
+    </div>
+    <div class="stickybutton">
+      <i class="bi bi-envelope sendmail"></i>
     </div>
     <!-- Footer -->
     <div class="container-fluid my-footer" id="contactus">
@@ -282,5 +262,12 @@
     <!--Scripts for Popper JS and Bootstrap JS-->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"
+      integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ=="
+      crossorigin="anonymous"
+    ></script>
+    <script src="app.js"></script>
   </body>
 </html>
